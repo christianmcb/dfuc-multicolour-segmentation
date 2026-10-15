@@ -1,0 +1,23 @@
+# Baseline: 3-channel BGR as read by cv2 (called RGB in the paper).
+# Settings recovered from the saved config.yml of the original run: results/runs/baseline_bs8/config.yml (11 Apr 2023). Paper Table 2 row 'RGB'.
+batch_size: 8
+epochs: 1000
+early_stopping: 20
+lr: 0.001
+optimizer: Adam
+weight_decay: 0.0001
+scheduler: ReduceLROnPlateau
+factor: 0.1
+patience: 6
+min_lr: 1.0e-06
+loss: BCEDiceLoss
+num_classes: 1
+input_h: 480
+input_w: 640
+img_ext: .jpg
+mask_ext: .png
+num_workers: 4
+dataset: dfuc2022
+name: baseline_rgb
+colour_transform: rgb
+

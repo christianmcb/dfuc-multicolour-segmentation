@@ -1,0 +1,23 @@
+# RGB + log-transformed CIELAB a-channel. [TODO: the paper's RGB+A run (12 Jun 2023, results/runs/rgb_a_single_tensor) predates the log(a) source; confirm whether it used raw a.]
+# Settings recovered from the saved config.yml of the original run: results/runs/rgb_a_*/config.yml. Paper Table 2 row 'RGB + A' has no matching saved log.
+batch_size: 8
+epochs: 1000
+early_stopping: 20
+lr: 0.001
+optimizer: Adam
+weight_decay: 0.0001
+scheduler: ReduceLROnPlateau
+factor: 0.1
+patience: 6
+min_lr: 1.0e-06
+loss: BCEDiceLoss
+num_classes: 1
+input_h: 480
+input_w: 640
+img_ext: .jpg
+mask_ext: .png
+num_workers: 4
+dataset: dfuc2022
+name: rgb_a
+colour_transform: rgb_a
+

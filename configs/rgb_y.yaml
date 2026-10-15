@@ -1,0 +1,23 @@
+# RGB + luminance ('Y' in the paper; BT.709 luma^k rescaled, not YCbCr).
+# Settings recovered from the saved config.yml of the original run: results/runs/rgb_luminance*/config.yml. Paper Table 2 row 'RGB + Y' has no matching saved log.
+batch_size: 8
+epochs: 1000
+early_stopping: 20
+lr: 0.001
+optimizer: Adam
+weight_decay: 0.0001
+scheduler: ReduceLROnPlateau
+factor: 0.1
+patience: 6
+min_lr: 1.0e-06
+loss: BCEDiceLoss
+num_classes: 1
+input_h: 480
+input_w: 640
+img_ext: .jpg
+mask_ext: .png
+num_workers: 4
+dataset: dfuc2022
+name: rgb_y
+colour_transform: rgb_y
+luminance_power: 5   # [TODO: the exponent behind the paper's RGB+Y row is not recorded. The source file holds 5; saved runs exist for 1 to 5 (results/runs/rgb_luminance_*). Confirm.]

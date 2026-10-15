@@ -1,0 +1,23 @@
+# HSV + CIELAB, 6 channels, no RGB (paper Table 2 row 'HSV + LAB').
+# Settings recovered from the saved config.yml of the original run: results/runs/hsv_lab_single_tensor/config.yml (13 Jun 2023); its log matches the paper row exactly.
+batch_size: 8
+epochs: 1000
+early_stopping: 20
+lr: 0.001
+optimizer: Adam
+weight_decay: 0.0001
+scheduler: ReduceLROnPlateau
+factor: 0.1
+patience: 6
+min_lr: 1.0e-06
+loss: BCEDiceLoss
+num_classes: 1
+input_h: 480
+input_w: 640
+img_ext: .jpg
+mask_ext: .png
+num_workers: 4
+dataset: dfuc2022
+name: hsv_lab
+colour_transform: hsv_lab
+

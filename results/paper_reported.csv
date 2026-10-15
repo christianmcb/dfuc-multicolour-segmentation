@@ -1,0 +1,141 @@
+table,group,model,metric,value
+table2,DFUC2022 validation,RGB,epoch,45
+table2,DFUC2022 validation,RGB,train_loss,0.2371
+table2,DFUC2022 validation,RGB,train_iou,0.7067
+table2,DFUC2022 validation,RGB,train_dice,0.8193
+table2,DFUC2022 validation,RGB,val_loss,0.4034
+table2,DFUC2022 validation,RGB,val_iou,0.595
+table2,DFUC2022 validation,RGB,val_dice,0.7341
+table2,DFUC2022 validation,RGB + Y,epoch,48
+table2,DFUC2022 validation,RGB + Y,train_loss,0.2272
+table2,DFUC2022 validation,RGB + Y,train_iou,0.7164
+table2,DFUC2022 validation,RGB + Y,train_dice,0.826
+table2,DFUC2022 validation,RGB + Y,val_loss,0.3987
+table2,DFUC2022 validation,RGB + Y,val_iou,0.5966
+table2,DFUC2022 validation,RGB + Y,val_dice,0.7354
+table2,DFUC2022 validation,RGB + A,epoch,34
+table2,DFUC2022 validation,RGB + A,train_loss,0.3024
+table2,DFUC2022 validation,RGB + A,train_iou,0.6501
+table2,DFUC2022 validation,RGB + A,train_dice,0.7782
+table2,DFUC2022 validation,RGB + A,val_loss,0.4016
+table2,DFUC2022 validation,RGB + A,val_iou,0.5827
+table2,DFUC2022 validation,RGB + A,val_dice,0.7239
+table2,DFUC2022 validation,HSV + LAB,epoch,44
+table2,DFUC2022 validation,HSV + LAB,train_loss,0.2382
+table2,DFUC2022 validation,HSV + LAB,train_iou,0.715
+table2,DFUC2022 validation,HSV + LAB,train_dice,0.8247
+table2,DFUC2022 validation,HSV + LAB,val_loss,0.4017
+table2,DFUC2022 validation,HSV + LAB,val_iou,0.5957
+table2,DFUC2022 validation,HSV + LAB,val_dice,0.7331
+table3,DFUC2022 test,RGB,fne,0.4313
+table3,DFUC2022 test,RGB,fpe,0.3947
+table3,DFUC2022 test,RGB,iou,0.402
+table3,DFUC2022 test,RGB,dice,0.5181
+table3,DFUC2022 test,RGB + Y,fne,0.4038
+table3,DFUC2022 test,RGB + Y,fpe,0.3912
+table3,DFUC2022 test,RGB + Y,iou,0.4176
+table3,DFUC2022 test,RGB + Y,dice,0.5347
+table3,DFUC2022 test,RGB + A,fne,0.4481
+table3,DFUC2022 test,RGB + A,fpe,0.3418
+table3,DFUC2022 test,RGB + A,iou,0.4121
+table3,DFUC2022 test,RGB + A,dice,0.5364
+table3,DFUC2022 test,HSV + LAB,fne,0.4107
+table3,DFUC2022 test,HSV + LAB,fpe,0.3838
+table3,DFUC2022 test,HSV + LAB,iou,0.4207
+table3,DFUC2022 test,HSV + LAB,dice,0.5364
+table3,CWDB,RGB,fne,0.2317
+table3,CWDB,RGB,fpe,0.1871
+table3,CWDB,RGB,iou,0.6224
+table3,CWDB,RGB,dice,0.7376
+table3,CWDB,RGB + Y,fne,0.1959
+table3,CWDB,RGB + Y,fpe,0.1813
+table3,CWDB,RGB + Y,iou,0.655
+table3,CWDB,RGB + Y,dice,0.773
+table3,CWDB,RGB + A,fne,0.2313
+table3,CWDB,RGB + A,fpe,0.1632
+table3,CWDB,RGB + A,iou,0.6362
+table3,CWDB,RGB + A,dice,0.7537
+table3,CWDB,HSV + LAB,fne,0.2168
+table3,CWDB,HSV + LAB,fpe,0.1374
+table3,CWDB,HSV + LAB,iou,0.6698
+table3,CWDB,HSV + LAB,dice,0.7791
+table3,AZH,RGB,fne,0.2787
+table3,AZH,RGB,fpe,0.4243
+table3,AZH,RGB,iou,0.5208
+table3,AZH,RGB,dice,0.6048
+table3,AZH,RGB + Y,fne,0.2613
+table3,AZH,RGB + Y,fpe,0.4264
+table3,AZH,RGB + Y,iou,0.512
+table3,AZH,RGB + Y,dice,0.5958
+table3,AZH,RGB + A,fne,0.2551
+table3,AZH,RGB + A,fpe,0.4156
+table3,AZH,RGB + A,iou,0.5231
+table3,AZH,RGB + A,dice,0.6098
+table3,AZH,HSV + LAB,fne,0.3069
+table3,AZH,HSV + LAB,fpe,0.4559
+table3,AZH,HSV + LAB,iou,0.5003
+table3,AZH,HSV + LAB,dice,0.5802
+table3,FUSC,RGB,fne,0.4027
+table3,FUSC,RGB,fpe,0.2571
+table3,FUSC,RGB,iou,0.4855
+table3,FUSC,RGB,dice,0.5948
+table3,FUSC,RGB + Y,fne,0.384
+table3,FUSC,RGB + Y,fpe,0.1929
+table3,FUSC,RGB + Y,iou,0.5246
+table3,FUSC,RGB + Y,dice,0.6379
+table3,FUSC,RGB + A,fne,0.4654
+table3,FUSC,RGB + A,fpe,0.2201
+table3,FUSC,RGB + A,iou,0.463
+table3,FUSC,RGB + A,dice,0.5742
+table3,FUSC,HSV + LAB,fne,0.4008
+table3,FUSC,HSV + LAB,fpe,0.2563
+table3,FUSC,HSV + LAB,iou,0.4982
+table3,FUSC,HSV + LAB,dice,0.6031
+table4,"DFUC2022 test, small wounds (<10%)",RGB,fne,0.7878
+table4,"DFUC2022 test, small wounds (<10%)",RGB,fpe,0.4213
+table4,"DFUC2022 test, small wounds (<10%)",RGB,iou,0.1956
+table4,"DFUC2022 test, small wounds (<10%)",RGB,dice,0.2628
+table4,"DFUC2022 test, small wounds (<10%)",RGB + Y,fne,0.7752
+table4,"DFUC2022 test, small wounds (<10%)",RGB + Y,fpe,0.4264
+table4,"DFUC2022 test, small wounds (<10%)",RGB + Y,iou,0.1954
+table4,"DFUC2022 test, small wounds (<10%)",RGB + Y,dice,0.2659
+table4,"DFUC2022 test, small wounds (<10%)",RGB + A,fne,0.8066
+table4,"DFUC2022 test, small wounds (<10%)",RGB + A,fpe,0.378
+table4,"DFUC2022 test, small wounds (<10%)",RGB + A,iou,0.173
+table4,"DFUC2022 test, small wounds (<10%)",RGB + A,dice,0.2447
+table4,"DFUC2022 test, small wounds (<10%)",HSV + LAB,fne,0.7764
+table4,"DFUC2022 test, small wounds (<10%)",HSV + LAB,fpe,0.4205
+table4,"DFUC2022 test, small wounds (<10%)",HSV + LAB,iou,0.1997
+table4,"DFUC2022 test, small wounds (<10%)",HSV + LAB,dice,0.2715
+table4,"DFUC2022 test, medium wounds (10-90%)",RGB,fne,0.4079
+table4,"DFUC2022 test, medium wounds (10-90%)",RGB,fpe,0.3212
+table4,"DFUC2022 test, medium wounds (10-90%)",RGB,iou,0.4464
+table4,"DFUC2022 test, medium wounds (10-90%)",RGB,dice,0.5633
+table4,"DFUC2022 test, medium wounds (10-90%)",RGB + Y,fne,0.3762
+table4,"DFUC2022 test, medium wounds (10-90%)",RGB + Y,fpe,0.317
+table4,"DFUC2022 test, medium wounds (10-90%)",RGB + Y,iou,0.4672
+table4,"DFUC2022 test, medium wounds (10-90%)",RGB + Y,dice,0.5845
+table4,"DFUC2022 test, medium wounds (10-90%)",RGB + A,fne,0.426
+table4,"DFUC2022 test, medium wounds (10-90%)",RGB + A,fpe,0.2592
+table4,"DFUC2022 test, medium wounds (10-90%)",RGB + A,iou,0.4566
+table4,"DFUC2022 test, medium wounds (10-90%)",RGB + A,dice,0.5787
+table4,"DFUC2022 test, medium wounds (10-90%)",HSV + LAB,fne,0.3821
+table4,"DFUC2022 test, medium wounds (10-90%)",HSV + LAB,fpe,0.3119
+table4,"DFUC2022 test, medium wounds (10-90%)",HSV + LAB,iou,0.4681
+table4,"DFUC2022 test, medium wounds (10-90%)",HSV + LAB,dice,0.5833
+table4,"DFUC2022 test, large wounds (>90%)",RGB,fne,0.1108
+table4,"DFUC2022 test, large wounds (>90%)",RGB,fpe,0.3953
+table4,"DFUC2022 test, large wounds (>90%)",RGB,iou,0.5569
+table4,"DFUC2022 test, large wounds (>90%)",RGB,dice,0.6744
+table4,"DFUC2022 test, large wounds (>90%)",RGB + Y,fne,0.097
+table4,"DFUC2022 test, large wounds (>90%)",RGB + Y,fpe,0.4017
+table4,"DFUC2022 test, large wounds (>90%)",RGB + Y,iou,0.5548
+table4,"DFUC2022 test, large wounds (>90%)",RGB + Y,dice,0.6694
+table4,"DFUC2022 test, large wounds (>90%)",RGB + A,fne,0.1133
+table4,"DFUC2022 test, large wounds (>90%)",RGB + A,fpe,0.3324
+table4,"DFUC2022 test, large wounds (>90%)",RGB + A,iou,0.6058
+table4,"DFUC2022 test, large wounds (>90%)",RGB + A,dice,0.7196
+table4,"DFUC2022 test, large wounds (>90%)",HSV + LAB,fne,0.1011
+table4,"DFUC2022 test, large wounds (>90%)",HSV + LAB,fpe,0.3593
+table4,"DFUC2022 test, large wounds (>90%)",HSV + LAB,iou,0.5891
+table4,"DFUC2022 test, large wounds (>90%)",HSV + LAB,dice,0.7035
