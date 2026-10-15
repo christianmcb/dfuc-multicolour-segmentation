@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dfuc-colour"
+version = "0.1.0"
+description = "Multi-colour-space channel selection for chronic wound segmentation (DFUC2022)"
+requires-python = ">=3.9"
+dependencies = ["torch", "opencv-python-headless", "numpy", "pandas", "pyyaml", "tqdm"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

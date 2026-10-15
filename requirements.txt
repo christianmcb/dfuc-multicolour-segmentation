@@ -1,0 +1,13 @@
+# Versions this refactor was tested with (Python 3.12, CPU): unit tests and the synthetic smoke test.
+# The original experiments used older versions, taken from the lab environment file:
+#   Python 3.7.13, PyTorch 1.12.0 (CUDA 11.3), numpy 1.21.5, pandas 1.3.5, PyYAML 6.0,
+#   opencv-python 4.6.0.66, albumentations 1.2.1 (imported but not used), tqdm 4.64.0.
+# The paper states Python 3.9.16, PyTorch 1.12.1, CUDA 11.6. [TODO: confirm which is right.]
+PyYAML==6.0.3
+matplotlib==3.11.2
+numpy==2.5.4
+opencv-python-headless==5.0.0.93
+pandas==3.0.6
+pytest==9.1.1
+torch==2.14.1
+tqdm==4.70.1

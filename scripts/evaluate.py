@@ -46,7 +46,7 @@ def main():
     model.load_state_dict(torch.load(os.path.join(args.run, 'model.pth'), map_location=device))
     model = model.to(device)
 
-    result = dict(validate(config, loader, model, make_criterion(config, device), device))
+    result = {k: float(v) for k, v in validate(config, loader, model, make_criterion(config, device), device).items()}
     print(json.dumps(result, indent=2))
     if args.out:
         with open(args.out, 'w') as f:
