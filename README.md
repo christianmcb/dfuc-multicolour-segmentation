@@ -1,6 +1,6 @@
 # Multi-colour-space channel selection for chronic wound segmentation
 
-This repository contains the code behind my first-author paper, *Multi-Colour Space Channel Selection for Improved Chronic Wound Segmentation* (IEEE ISBI 2024) [TODO: paper link or DOI]. I trained a U-Net on the DFUC2022 diabetic foot ulcer dataset with extra colour channels (HSV, CIELAB, a luminance channel) merged into the input tensor, alongside or instead of RGB. On the DFUC2022 test set the HSV+LAB input scored 0.4207 IoU against 0.4020 for the RGB baseline (paper Table 3), from single training runs.
+This repository contains the code behind my first-author paper, *Multi-Colour Space Channel Selection for Improved Chronic Wound Segmentation* (IEEE ISBI 2024) ([IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10635155)). I trained a U-Net on the DFUC2022 diabetic foot ulcer dataset with extra colour channels (HSV, CIELAB, a luminance channel) merged into the input tensor, alongside or instead of RGB. On the DFUC2022 test set the HSV+LAB input scored 0.4207 IoU against 0.4020 for the RGB baseline (paper Table 3), from single training runs.
 
 ## The problem
 
@@ -125,6 +125,7 @@ archive/           original working-directory code that the package does not use
   author    = {McBride, Christian and Cassidy, Bill and Kendrick, Connah and Reeves, Neil D. and Pappachan, Joseph M. and Yap, Moi Hoon},
   booktitle = {IEEE International Symposium on Biomedical Imaging (ISBI)},
   year      = {2024},
+  url       = {https://ieeexplore.ieee.org/abstract/document/10635155},
   note      = {[TODO: pages and DOI]}
 }
 ```
