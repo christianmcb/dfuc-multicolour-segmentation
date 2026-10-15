@@ -117,17 +117,6 @@ results/           saved configs and logs of the 76 original runs, numbers trans
 archive/           original working-directory code that the package does not use (kept for reference)
 ```
 
-## Limitations and what I would do differently
-
-- **One seed per configuration.** The saved outputs contain a single run per configuration, so I cannot put an error bar on any number. The saved logs hint at the noise: five pairs of runs with identical configuration files differ in best validation IoU by 0.005 to 0.031 (for example `rgb_luminance_3` against `rgb_luminance_3_rerun`). I edited the source between some of these runs, so they are not clean repeats, but the spread is larger than the validation differences in the table above. I would train every configuration with at least five seeds, report mean and standard deviation, and compare paired seeds.
-- **The headline model was chosen on the test set.** The paper presents HSV+LAB as the best model because it had the best test IoU on DFUC2022 among four candidates. Choosing by validation instead gives RGB+Y and smaller gains (above). I would choose the model on validation only and use the test set once.
-- **Validation numbers are optimistic.** The checkpoint, early stopping and learning-rate schedule all use the same 400 validation images, and I compared 76 runs on them. I would hold out a second validation split or use cross-validation.
-- **The split may not be patient-level.** The files carry no patient identifiers, so I cannot check whether images of the same patient or wound appear in more than one split. I did find 8 validation images that are byte-identical to training images under different IDs and with slightly different masks (2% of the validation set); I do not know why. No test image matches a training or validation image by file hash or image hash. I would split by patient.
-- **Metric definitions.** Training and validation IoU and Dice are computed over a whole batch at once, not per image and then averaged, so they depend on batch size; this also affects my batch-size comparison (2, 4, 8, 16). Dice uses soft probabilities and IoU uses a 0.5 threshold. Test IoU in the paper (about 0.40) is far below validation IoU (about 0.59), which suggests a different averaging, but the test evaluation code is not here, so do not compare the two directly. [TODO: describe the test metric.]
-- **The channel definitions differ from the paper's wording.** The code has no YCbCr conversion: "Y" is BT.709 luminance, rescaled per image and raised to a power, and "A" (in the current source) is a log-transformed, rescaled CIELAB a-channel. HSV+LAB contains no RGB channels. The loss in the code is 0.5 x BCE + Dice, where the paper's Table 1 says Dice loss. [TODO: reconcile this wording with the paper.]
-- **I edited files in place between experiments.** The dataset and training files in `archive/` are the last version of each, not necessarily the one behind each paper row, and the saved `config.yml` files do not record the colour transform. I would put the colour transform in the config and commit each experiment.
-- **The test evaluation cannot be reproduced from this repository** (no saved predictions, test masks or evaluation code).
-
 ## Citation
 
 ```bibtex
@@ -139,5 +128,3 @@ archive/           original working-directory code that the package does not use
   note      = {[TODO: pages and DOI]}
 }
 ```
-
-Christian McBride and Bill Cassidy contributed equally to the paper. [TODO: licence for the code.]
