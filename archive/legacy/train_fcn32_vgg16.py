@@ -122,7 +122,7 @@ for model_count in range(len(models_to_train)):
 #import cv2 as cv
 #import os 
 
-#path = "C:/Users/conna/Documents/img_datasets/DFU2022/val/val/validation_mask/"
+#path = "<DATA_ROOT>/val_masks"
 
 #images = os.listdir(path)
 

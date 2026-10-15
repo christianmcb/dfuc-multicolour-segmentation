@@ -1,8 +1,8 @@
 # data, weights and run outputs are never committed
-data/
+/data/
 datasets/
 inputs/
-runs/
+/runs/
 *.pth
 *.pt
 *.h5
