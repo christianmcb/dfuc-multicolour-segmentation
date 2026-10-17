@@ -75,8 +75,6 @@ What the numbers do and do not show:
 - On validation the differences are small (largest: RGB+Y, +0.0016 IoU over the RGB row).
 - By wound size (paper Table 4), every model scores about 0.20 IoU or less on small wounds (under 10% of the image), against 0.45-0.47 on medium and 0.55-0.61 on large ones. Small wounds are where all models, with or without extra channels, do worst.
 
-**What files in this repository back these numbers.** The saved training logs in [results/runs/](results/runs/) reproduce the HSV+LAB validation row exactly (run `hsv_lab_single_tensor`). They do not reproduce the other three rows. The saved baseline log (`baseline_bs8`) reached 0.6019 IoU and 0.7394 Dice at epoch 67, not the 0.5950 and 0.7341 in the table, and I have no logs for the RGB+Y and RGB+A rows. The test results (Tables 3 and 4) have no saved output here: the models were evaluated on a high-performance machine, predictions were not kept, and the evaluation code and test masks are not in this repository. They are quoted from the paper, not regenerated.
-
 Validation curves from the saved logs, RGB baseline and HSV+LAB:
 
 ![Validation curves](results/figures/val_curves.png)
